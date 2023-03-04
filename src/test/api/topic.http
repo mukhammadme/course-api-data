@@ -1,0 +1,30 @@
+### Get All Topics
+GET http://localhost:8080/topics HTTP/1.1
+content-type: application/json
+
+### Get A topic
+GET http://localhost:8080/topics/java HTTP/1.1
+
+### Add Topic
+POST http://localhost:8080/topics HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "java",
+  "name": "Core Java",
+  "description": "Core Java Description"
+}
+
+### Update Topic
+PUT http://localhost:8080/topics/javascript HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "javascript",
+  "name": "JavaScript",
+  "description": "Updated JavaScript Description"
+}
+
+### Remove topic
+DELETE http://localhost:8080/topics/javaee HTTP/1.1
+Content-Type: application/json

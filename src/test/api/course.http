@@ -1,0 +1,30 @@
+### Get All Topics
+GET http://localhost:8080/topics/java/courses HTTP/1.1
+content-type: application/json
+
+### Get A topic
+GET http://localhost:8080/topics/java/courses/java-streams HTTP/1.1
+
+### Add Topic
+POST http://localhost:8080/topics/java/courses HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "java-streams",
+  "name": "Java Streams",
+  "description": "Java Streams Description"
+}
+
+### Update Topic
+PUT http://localhost:8080/topics/java/courses/java-streams HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "javastreams",
+  "name": "Java 8 Streams",
+  "description": "Java 8 Streams Description"
+}
+
+### Remove topic
+DELETE http://localhost:8080/topics/java/courses/javastreams HTTP/1.1
+Content-Type: application/json
